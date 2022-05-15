@@ -1,0 +1,129 @@
+@media (max-width: 1280px){
+    .cabecalho .titulo{
+        font-size: 40px;
+    }
+
+    .selecao-de-personagens .lista-de-personagens{
+        max-width: 330px;
+    }
+
+    .selecao-de-personagens .lista-de-personagens .personagem{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px){
+    body::before{
+        background-image: url("../imagens/bg-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+    }
+
+    main{
+        padding: 0 5px;
+        justify-content: start;
+    }
+
+    .cabecalho{
+        z-index: 1;
+        display: flex;
+        justify-content:center;
+    }
+
+    .cabecalho .titulo{
+        font-size: 22px;
+        line-height: 120px;
+    }
+
+    .selecao-de-personagens .personagem-grande{
+        display: block;
+    }
+
+    .selecao-de-personagens .personagem-grande {
+        text-align: center;
+        width: 30%;
+        height: 70vh;
+        position: relative;
+    }
+
+    .selecao-de-personagens .personagem-grande img {
+        position:absolute;
+        width: 130px;
+        top: 105%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+    }
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-1 img {
+        left: 220%;
+        width: 160px;
+    }
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-2 img {
+        left: -29%;
+    }
+
+    .selecao-de-personagens .personagem-grande .nome::before {
+        content: '';
+        height: 20px;
+        width: 100%;
+        top: 790px;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+    }
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome::before {
+        left: -156%;
+        width: 105px;
+    }
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome::before {
+        left: 100%;
+        width: 105px;
+    }
+
+    .selecao-de-personagens .personagem-grande .nome h2 {
+        color: var(--cor-padrao);
+        font-family: 'command',sans-serif;
+        position: absolute;
+        bottom: 0px;
+        top: 780px;
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome h2 {
+        left: -150%;
+    } 
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome h2 {
+        left: 130%;
+    } 
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome::before {
+        background-color: var(--cor-azul-principal);
+    }
+
+    .selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome::before {
+        background-color: var(--cor-vermelha-principal);
+    }
+
+    .selecao-de-personagens .lista-de-personagens {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+        justify-content: center;
+        gap: 12px;
+    }
+
+}
+
+@media(max-width: 360px){
+    .cabecalho .titulo{
+        font-size: 19px;
+    }
+}
